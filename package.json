@@ -1,0 +1,27 @@
+{
+  "name": "newsscraper",
+  "version": "1.0.0",
+  "description": "The website is built using node.js tools such as Express, express-handlebars, mongoose, cheerio and axios to scrape the article from another website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anand92490/newsscraper.git"
+  },
+  "keywords": [],
+  "author": "Anand Chaudhary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anand92490/newsscraper/issues"
+  },
+  "homepage": "https://github.com/anand92490/newsscraper#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cherio": "^1.0.0-rc.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mongoose": "^5.7.5"
+  }
+}
