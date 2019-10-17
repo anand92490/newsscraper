@@ -5,8 +5,9 @@ const db = require("../models");
 
 module.exports = function(app) {
 
-app.post("/scrape", function(req, res) {
+app.post("/api/scrape", function(req, res) {
   axios.get("https://thehimalayantimes.com").then(function(response) {
+
     var $ = cheerio.load(response.data);
 
     $("h4").each(function(i, element) {
