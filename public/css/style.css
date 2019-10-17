@@ -1,0 +1,7 @@
+body {
+    background-image: url("../images/newspaperhack.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

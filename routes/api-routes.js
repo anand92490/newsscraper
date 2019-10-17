@@ -3,7 +3,7 @@ const axios = require("axios");
 const db = require("../models");
 
 
-
+module.exports = function(app) {
 
 app.post("/scrape", function(req, res) {
   axios.get("https://thehimalayantimes.com").then(function(response) {
@@ -34,3 +34,5 @@ app.post("/scrape", function(req, res) {
     res.send("Scrape Complete");
   });
 });
+
+};
