@@ -7,7 +7,7 @@ module.exports = function(app) {
       
 
 
-app.get("/api/scrape", function(req, res) {
+app.post("/api/scrape", function(req, res) {
   axios.get("https://thehimalayantimes.com").then(function(response) {
 
     var $ = cheerio.load(response.data);
@@ -32,7 +32,7 @@ app.get("/api/scrape", function(req, res) {
           console.log(err);
         });
     });
-
+    console.log(result);
     // Send a message to the client
     res.send("Scrape Complete");
   });
