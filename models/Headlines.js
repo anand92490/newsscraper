@@ -3,7 +3,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var HeadlineSchema = new Schema({
-  title: {
+  headline: {
     type: String,
     required: false
   },
