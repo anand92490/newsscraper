@@ -3,9 +3,18 @@ const axios = require("axios");
 const db = require("../models");
 
 module.exports = function(app) {
+
+
+  app.post("/api/all", function(req, res){
+    db.headline.find({$query: {saved:false} }).sort( { date: -1} )
+    .then( function(response){
+      res.json(response.length);
+      //res.json(response)
+    })
+  });
  
   // post
-  app.post("/api/scrape", function(req, res) {
+  app.get("/api/scrape", function(req, res) {
     axios.get("https://thehimalayantimes.com").then(function(response) {
       var $ = cheerio.load(response.data);
 

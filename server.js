@@ -31,16 +31,14 @@ app.set("view engine", "handlebars");
 
 
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://anand92490:Cartmanguy!1@ds335678.mlab.com:35678/heroku_599zhbfr";
 
 mongoose.connect(MONGODB_URI);
 
-// db.Headline.create();
-// db.Note.create();
+
 require("./routes/index.js")(app);
 
 
-// Start the server
 app.listen(PORT, function() {
     console.log("App running on port " + PORT + "!");
   });

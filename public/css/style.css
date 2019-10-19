@@ -3,9 +3,120 @@
 
 body {
     background-image: url("../images/newspaperhack.jpg");
-    background-color: #cccccc;
+    background-attachment: fixed;
+    background-color: #ccccccb2;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
     position: relative;
+}
+
+
+
+body, html {
+    height: 100%;
+}
+
+
+.titleJumbotron {
+    margin: 0px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.headerDivJumbotron {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 5px solid rgb(241, 235, 235);
+    padding: 20px;
+}
+
+#headerJumbotron {
+    font-family: 'Special Elite', cursive;
+    font-size: 50px;
+    border-bottom: 2px solid rgb(121, 9, 9);
+    
+}
+
+#subheaderJumbotron {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+#navbar {
+	padding: 10px 30px 10px 30px;
+	font-family: 'Special Elite', cursive;
+	overflow: hidden;
+}
+
+.navLink {
+    color: white;
+    font-size: 20px;
+    background: rgba(3, 59, 243, 0.377);
+    margin-right: 50px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-body {
+    border: 2px solid rgb(139, 24, 24);
+}
+
+.headlineLink {
+    text-decoration: none;
+    color: rgb(13, 13, 119)
+}
+
+.headlineLink:hover {
+    text-decoration: none;
+    color: blue
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.articleImage {
+    width: 100%
+}
+
+.buttonColumn {
+    margin-right: 0px
+}
+
+.saveArticleButton {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Special Elite', cursive;
+}
+
+.modal-header {
+    color: white;
+    font-family: 'Special Elite', cursive;
+}
+
+.buttonRow {
+    margin-top: 10px
+}
+
+#titleinput,
+#bodyinput {
+    width: 100%
+}
+
+.articleContainer {
+    padding-bottom: 50px;
+    padding-top: 20px
+}
+
+.noteCard {
+    display: block;
+    width: 100%
+}
+
+.noteCardBody {
+    color: black
 }

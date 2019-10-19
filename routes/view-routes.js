@@ -53,8 +53,29 @@ module.exports = function(app){
         var headlineObject = {};
         headlineObject["articles"] = [];
 
+        db.Headline.find({saved: true}).sort({date: -1})
+        .then(function(found){
+            if(found.length > 0){
+                for(var i = 0; i < found.length; i++){
+                    console.log(found[i]);
 
-        res.render("saved")
+                    newObject = {
+                        id: found[i]._id,
+                        headline: found[i].headline,
+                        summary: found[i].summary,
+                        link: found[i].link,
+                        image: found[i].image,
+                        saved: found[i].saved,
+                        notes: found[i].notes
+                    }
+
+                }
+
+            } else {
+                res.render("saved");
+            }
+        })
+
     });
 
 
